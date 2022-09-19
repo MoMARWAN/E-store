@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+  <link rel="shortcut icon" href="./Images/Rectangle-1.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <title>metro</title>
+</head>
+
+<body>
+
+
+  <header dir="rtl">
+
+    <nav class="navbar">
+
+      <a id="logo" href="./index.html"><img src="images/Rectangle 1.png" style="max-width: 70%;" alt=""></a>
+
+      <div class="main">
+        <div class="form-group has-search">
+          <span><i id="fa" class="fa-solid fa-magnifying-glass"></i></span>
+          <input type="search" class="form-control" placeholder="ابحث عن ما تريد">
+        </div>
+      </div>
+
+      <div class="nav-3">
+        <ul>
+          <li>
+            <a href="./login.html">
+              <button type="button" class="btn  position-relative cart">
+                <i class="fa-solid fa-basket-shopping "></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  3
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+                <div style="padding-right: 5px;">
+                  <p style="margin: 0 !important;">سلتي</p>
+                  <p style="margin: 0 !important; color:#DB242C;  font-size: 16px; font-family:'Roboto', sans-serif; font-weight: 900; ">
+                    ₪43.67</p>
+                </div>
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="./login.html">
+              <button type="button" class="btn  position-relative cart">
+                <i class="fa-solid fa-heart like"></i> 
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  0
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+                <div style="padding-right: 5px;">
+                  <p style="padding-top:8px;">المفضلة</p>
+                </div>
+              </button>
+            </a>
+          </li>
+          <li>
+              <i class="fa-solid fa-user p-1 like"></i>
+              <a id="login-home" href="./login.html">تسجيل الدخول </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="nav-2">
+      <div class="dropdown">
+        <button class="dropbtn">جميع الفئات  <i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <li><i class="fa-solid fa-bread-slice"></i><a href="#">العروض</a></li>
+          <li><i class="fa-solid fa-bread-slice"></i><a href="#">المخبوزات و المعجنات</a></li>
+          <li><i class="fa-solid fa-bread-slice"></i><a href="#">الخضروات و الفواكة</a></li>
+          <li><i class="fa-solid fa-bread-slice"></i><a href="#">الالبان و الاجبان</a></li>
+          <li><i class="fa-solid fa-bread-slice"></i><a href="#">المواد الغذائية</a></li>
+          <li><i class="fa-solid fa-bread-slice"></i><a href="#">اللحوم الطازجة</a></li>
+          <li><i class="fa-solid fa-bread-slice"></i><a href="#">المجمدات</a></li>
+          <li><i class="fa-solid fa-bread-slice"></i><a href="#">الحلويات و المسليات</a></li>
+          <li><i class="fa-solid fa-bread-slice"></i><a href="#">مواد التنظيف</a></li>
+          <li><i class="fa-solid fa-bread-slice"></i><a href="#">العناية الشخصية</a></li>
+        </div>
+      </div>
+      <li class="nav-item">
+        <a class="nav-link active" href="./index.html">الرئيسية</a>
+        <div class="run"></div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./recently-arrived.html">المتجر</a>
+        <div class="run"></div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./Daily Offers.html">العروض </a>
+        <div class="run"></div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./best seller.html"> منتجات مميزة</a>
+        <div class="run"></div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./Recipes.html">الوصفات</a>
+        <div class="run"></div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">من نحن</a>
+        <div class="run"></div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">اتصل بنا</a>
+        <div class="run"></div>
+      </li>
+
+    </ul>
+
+  </header>
+  <!-- slider imag header -->
+
+  <div id="carouselExampleControls" class="carousel slide slider">
+    <div class="carousel-inner">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
+        style="max-height: 370px;">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/slide.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/sli.png" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/mmmm_n.jpg" class="d-block w-100 " alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- // slider imag header -->
+  <section dir="rtl" class="Daily-Daily">
+    <div class="Daily">
+      <h4 dir="rtl">عروض يومية</h4>
+      <a href="#">عرض المزيد <i class="fa-solid fa-angle-left"></i></a>
+    </div>
+    <div class="splide1">
+
+      <div class="splide__track">
+        <div class="splide__list">
+          <div class="row row-cols-1 row-cols-md-4 g-3 splide__slide  Daily-Offers">
+            <div class="col splide__slide">
+              <div class="card prodect" style="width: 15rem">
+                <img src="images/bavaria/img.png" class="card-img-top " alt="...">
+                <div class="discount">
+                  <img src="./Images/tag.png" alt="">
+                </div>
+                <div class="heart" onclick="myFunction()"><i class="bi bi-suit-heart"></i></div>
+                <div class="card-body">
+                   <p class="card-text discount-1"><del>7,00 ₪</del> &nbsp; 6,00 ₪</p>
+                   <p id=".discount-2">
+                    مشروب شعير بفاريا سادة 500 مل
+                    Bavaria Original</p>
+
+
+                  <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max=""
+                      name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                      inputmode=""><input type="button" value="+" class="plus">
+                  </div>
+                  <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+            <div class="col splide__slide">
+              <div class="card prodect" style="width: 15rem">
+                <img src="images/bavaria/img2.png" class="card-img-top " alt="...">
+                <div class="discount">
+                   <img src="./Images/tag.png" alt="">
+                </div>
+                <div class="heart" onclick="myFunction()"><i class="bi bi-suit-heart"></i></i></div>
+                <div class="card-body">
+                  <p class="card-text discount-1"> <del>7,00 ₪</del> &nbsp; 6,00 ₪</p>
+                  <p id=".discount-2">
+                    مشروب شعير بفاريا سادة 500 مل
+                    Bavaria Original</p>
+
+                  <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max=""
+                      name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                      inputmode=""><input type="button" value="+" class="plus">
+                  </div>
+                  <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+            <div class="col splide__slide">
+              <div class="card prodect" style="width: 15rem">
+                <img src="images/bavaria/img3.png" class="card-img-top " alt="...">
+                <div class="discount">
+                   <img src="./Images/tag.png" alt="">
+                </div>
+                <div class="heart" onclick="myFunction()"><i class="bi bi-suit-heart"></i></i></div>
+                <div class="card-body">
+                  <p class="card-text discount-1"><del>7,00 ₪</del> &nbsp; 6,00 ₪</p>
+                   <p id=".discount-2">
+                    مشروب شعير بفاريا سادة 500 مل
+                    Bavaria Original</p>
+
+                  <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max=""
+                      name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                      inputmode=""><input type="button" value="+" class="plus">
+                  </div>
+                  <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+            <div class="col splide__slide">
+              <div class="card prodect" style="width: 15rem">
+                <img src="images/bavaria/img4.png" class="card-img-top " alt="...">
+                <div class="discount">
+                   <img src="./Images/tag.png" alt="">
+                </div>
+                <div class="heart" onclick="myFunction()"><i class="bi bi-suit-heart"></i></i></div>
+                <div class="card-body">
+                   <p class="card-text discount-1"><del>7,00 ₪</del> &nbsp; 6,00 ₪</p>
+                   <p id=".discount-2">
+                    مشروب شعير بفاريا سادة 500 مل
+                    Bavaria Original</p>
+
+
+                  <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max=""
+                      name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                      inputmode=""><input type="button" value="+" class="plus">
+                  </div>
+                  <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section dir="rtl" class="Daily-Daily">
+    <div class="Daily">
+      <h4 dir="rtl">عروض يومية</h4>
+      <a href="#">عرض المزيد <i class="fa-solid fa-angle-left"></i></a>
+    </div>
+    <div class="splide2">
+      <div class="splide__track">
+        <div class="splide__list">
+          <div class="row row-cols-1 row-cols-md-4 sm-1 splide__slide  Daily-Offers">
+            <div class="col splide__slide">
+              <div class="card prodect" style="width: 15rem">
+                <img src="images/special products/skn.png" class="card-img-top " alt="...">
+                <div class="heart" onclick="myFunction()"><i class="bi bi-suit-heart"></i></i></div>
+                <div class="card-body">
+                  <p class="card-text discount-1"> 6,00 ₪</p>
+                  <p>اسكدنيا 1 كيلو</p>
+
+                  <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max=""
+                      name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                      inputmode=""><input type="button" value="+" class="plus">
+                  </div>
+                  <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+            <div class="col splide__slide">
+              <div class="card prodect" style="width: 15rem">
+                <img src="images/special products/ma.png" class="card-img-top " alt="...">
+                <div class="heart" onclick="myFunction()"><i class="bi bi-suit-heart"></i></i></div>
+                <div class="card-body">
+                  <p class="card-text discount-1"> 6,00 ₪</p>
+                  <p>اسكدنيا 1 كيلو</p>
+                  <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max=""
+                      name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                      inputmode=""><input type="button" value="+" class="plus">
+                  </div>
+                  <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+            <div class="col splide__slide">
+              <div class="card prodect" style="width: 15rem">
+                <img src="images/special products/me.png" class="card-img-top " alt="...">
+                <div class="heart" onclick="myFunction()"><i class="bi bi-suit-heart"></i></i></div>
+                <div class="card-body">
+                   <p class="card-text discount-1"> 6,00 ₪</p>
+                  <p>اسكدنيا 1 كيلو</p>
+
+                  <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max=""
+                      name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                      inputmode=""><input type="button" value="+" class="plus">
+                  </div>
+                  <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+            <div class="col splide__slide">
+              <div class="card prodect" style="width: 15rem">
+                <img src="images/special products/or.png" class="card-img-top " alt="...">
+               
+                <div class="heart" onclick="myFunction()"><i class="bi bi-suit-heart"></i></i></div>
+                <div class="card-body">
+                   <p class="card-text discount-1"> 6,00 ₪</p>
+                  <p>اسكدنيا 1 كيلو</p>
+
+                  <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max=""
+                      name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                      inputmode=""><input type="button" value="+" class="plus">
+                  </div>
+                  <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>إضافة للسلة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section dir="rtl" class="Shop-as-required-1">
+    <h4>تسوق حسب المطلوب</h4>
+    <div class="row row-cols-1 row-cols-md-3 g-3 Shop-as-required">
+      <div class="col" id="cart0">
+        <img src="images/svg/Group 404.png" class="img-center">
+        <p class="">اطعمة طازجة</p>
+      </div>
+      <div class="col" id="cart1">
+        <img src="images/svg/Group 400.png" alt="..." class="img-center">
+        <p class="">اطعمة طازجة</p>
+      </div>
+      <div class="col" id="cart2">
+        <img src="images/svg/Group 404.png" alt="..." class="img-center">
+        <p class="">اطعمة طازجة</p>
+      </div>
+      <div class="col" id="cart3">
+        <img src="images/svg/Group 426.png" alt="..." class="img-center">
+        <p class="">اطعمة طازجة</p>
+      </div>
+      <div class="col" id="cart4">
+        <img src="images/svg/Group 401.png" alt="..." class="img-center">
+        <p class="">اطعمة طازجة</p>
+      </div>
+      <button class="col" id="cart5">
+        <p>عرض المزيد</p>
+      </button>
+    </div>
+  </section>
+
+  <section dir="rtl" class="best-brands">
+    <div class="Daily">
+      <h4>افضل ماركات</h4>
+      <a href="#">عرض المزيد <i class="fa-solid fa-angle-left"></i></a>
+    </div>
+    <div class="row row-cols-1 row-cols-md-6 g-3 top-prand">
+      <a class="col" href="#"><img src="images/brand/Rectangle 203.png" alt=""></a>
+      <a class="col" href="#"><img src="images/brand/Rectangle 204.png" alt=""></a>
+      <a class="col" href="#"><img src="images/brand/Component 18 – 14.png" alt=""></a>
+      <a class="col" href="#"><img src="images/brand/Component 17 – 14.png" alt=""></a>
+      <a class="col" href="#"><img src="images/brand/Rectangle 203.png" alt=""></a>
+      <a class="col" href="#"><img src="images/brand/Rectangle 204.png" alt=""></a>
+
+
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer dir="rtl" class="bg-black text-center text-white pb-4">
+    
+      <section class="Footer-metro">
+        <div class="col-footer">
+          <div class="col-lg-4">
+            <ul class="list-unstyled">
+              <li class="img-footer">
+                <img  src="images/Group 74.png"  alt="">
+              </li>
+              <li>
+                <p>أول مركز تسوق في قطاع غزة
+                   فيه أجود المنتجات بأسعار منافسة
+                </p>
+              </li>
+              <li>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="عنوان بريدك الإلكتروني"
+                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline email-bth" type="button">ألاشتراك</button>
+                  </div>
+                </div>
+              </li>
+              <li id="Ssocial-media">
+                <div class="social-media" id="facebook"><a href=""><i class="fa-brands fa-facebook-f"></i></a></div>
+                <div class="social-media" id="instagram"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="social-media" id="tiktok"><a href=""><i class="fa-brands fa-tiktok"></i></a></div>
+                <div class="social-media" id="twitter"><a href=""><i class="fa-brands fa-twitter"></i></a></div>
+                <div class="social-media" id="youtube"><a href=""><i class="fa-brands fa-youtube"></i></a></div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 contact-information">
+            <h5 class="text-uppercase pe-5">معلومات الاتصال</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <h6 class="md-3">عنوان:</h6>
+                <p>غزة_ شارع الشهداء_غرب أصدقاء المريض</p>
+              </li>
+              <li>
+                <h6>هاتف:</h6>
+                <p> 28822888</p>
+              </li>
+              <li>
+                <h6>:البريد الإلكتروني</h6>
+                <p> metro@metro-markwt.ps</p>
+              </li>
+
+            </ul>
+          </div>
+          <div class="col-lg-3  Popular-Categories ">
+            <h5 class="text-uppercase pe-5">التنصنيفات الشائعة</h5>
+            <ul class="list-unstyled ">
+              <li class="mb-2">
+                <a href="#!" class="text-white">المشروبات</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">أطعمة طازجة</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">منتجات الألبان</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">خضروات و فواكهة</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">مواد غذائية </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 ">
+            <h5 class="text-uppercase pe-5" >حسابي</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="#!" class="text-white">تسجيل الدخول</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">تاريخ الطلب</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">قائمة امنياتي</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">ترتيب المسار</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </section>
+      
+    
+    <hr>
+      <div class="Policy">
+
+
+        <nav>
+          <a href="#">سياسة البائع</a>
+          <a href="#">سياسة العائدات</a>
+          <a href="#">سياسة الدعم </a>
+          <a href="#"> سياسة التوصيل</a>
+        </nav>
+
+        <nav class="Credit-card">
+
+          <a href="#"><img src="./Images/visa.png" alt=""></a>
+          <a href="#"><img src="./Images/bank.png" alt=""></a>
+          <a href="#"><img src="./Images/visa.png" alt=""></a>
+          <a href="#"><img src="./Images/paypal.png" alt=""></a>
+
+        </nav>
+        <div class="dash">
+          <h4 >Powered By Dash</h4>
+        </div>
+
+
+
+
+
+      </div>
+      <hr class="mb-4">
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+
+
+
+
+
+
+
+  <script>
+
+    var splide1 = new Splide('.splide1', {
+      type: 'loop',
+      drag: 'free',
+      autoplay: true,
+      perPage: 1,
+      rewind: true,
+
+    });
+    var splide2 = new Splide('.splide2', {
+      type: 'loop',
+      drag: 'free',
+      perPage: 1,
+      rewind: true,
+      autoplay: true,
+    });
+
+    splide1.mount();
+    splide2.mount();
+
+
+
+  </script>
+
+
+
+
+</body>
+
+</html>

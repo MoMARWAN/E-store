@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>metro</title>
+</head>
+<body>  
+  <header dir="rtl">
+  
+    <nav class="navbar">
+
+      <a id="logo" href="./index.html"><img src="images/Rectangle 1.png" style="max-width: 70%;" alt=""></a>
+
+      <div  class="main">
+        <div class="form-group has-search">
+          <span><i id="fa" class="fa-solid fa-magnifying-glass"></i></span>
+          <input type="search" class="form-control"  placeholder="ابحث عن ما تريد">
+        </div>
+      </div>
+
+        <div class="nav-3">
+            <ul>
+              <li>
+                <a href="./login.html">
+                  <button type="button" class="btn  position-relative cart">
+                    <i class="fa-solid fa-basket-shopping  like"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      0
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                    <div>
+                    <p style="margin: 0 !important;">سلتي</p>
+                    <p style="margin: 0 !important; color:#DB242C; font-family:'Roboto', sans-serif; font-weight: 900; ">0.00₪</p>
+                  </div>
+                  </button> 
+                </a>
+              </li>
+              <li >
+                <a  href="./login.html">
+                  <button  type="button" class="btn  position-relative ">
+                    <i class="fa-solid fa-heart like"></i> المفضلة
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      0
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                   
+                  </button> 
+                </a>
+              </li> 
+              <li>
+                <a href="./login.html">
+                  <i class="fa-solid fa-user p-1 like" ></i>
+                  تسجيل الدخول 
+                </a>
+              </li>
+            </ul>
+        </div>  
+      </nav>
+      <ul  class="nav-2">
+        <div class="dropdown">
+          <button class="dropbtn">جميع الاقسام  <i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+          <div class="dropdown-content">
+              <li><i class="fa-solid fa-bread-slice"></i><a href="#">العروض</a></li>
+              <li><i class="fa-solid fa-bread-slice"></i><a href="#">المخبوزات و المعجنات</a></li>
+              <li><i class="fa-solid fa-bread-slice"></i><a href="#">الخضروات و الفواكة</a></li>
+              <li><i class="fa-solid fa-bread-slice"></i><a href="#">الالبان و الاجبان</a></li>
+              <li><i class="fa-solid fa-bread-slice"></i><a href="#">المواد الغذائية</a></li>
+              <li><i class="fa-solid fa-bread-slice"></i><a href="#">اللحوم الطازجة</a></li>
+              <li><i class="fa-solid fa-bread-slice"></i><a href="#">المجمدات</a></li>
+              <li><i class="fa-solid fa-bread-slice"></i><a href="#">الحلويات و المسليات</a></li>
+              <li><i class="fa-solid fa-bread-slice"></i><a href="#">مواد التنظيف</a></li>
+              <li><i class="fa-solid fa-bread-slice"></i><a href="#">العناية الشخصية</a></li>
+          </div>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link active" href="./index.html">الرئيسية</a>
+          <div class="run"></div>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" href="./recently-arrived.html">وصل حديثا</a>
+          <div class="run"></div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Daily Offers.html">العروض اليومية</a>
+       <div class="run"></div> </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./best seller.html">الاكثر مبيعا</a>
+      <div class="run"></div>  </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">الوصفات</a>
+      <div class="run"></div>  </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">من نحن</a>
+      <div class="run"></div>  </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">اتصل بنا</a>
+     <div class="run"></div>   </li>
+       
+      </ul>
+  
+    </header>
+    
+    <section dir="rtl" class="Daily-Daily">
+        <div class="Daily">
+      <h4 dir="rtl">وصل حديثا</h4>
+    </div>
+      <div class="row row-cols-1 row-cols-md-4 g-3   Daily-Offers" >
+        <div class="col " >   
+     <div class="card prodect" style="width: 15rem">
+      <img src="images/bavaria/img.png" class="card-img-top " alt="...">
+      <div class="discount"><p>66% خصم</p>
+      </div>
+      <div class="heart"  onclick="myFunction()" ><i class="fa-solid fa-heart-circle-plus"></i></i></div>
+      <div class="card-body">
+        <p class="card-text discount-1"> <del>7,00 ₪</del> &nbsp; 6,00 ₪</p>
+        <p>مشروب شعير بفاريا زنجبيل وليمون
+          500 مل</p>
+         
+          <div class="quantity buttons_added">
+            <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+          </div>
+          <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>اضافة</button>
+          </div>
+      </div>
+    </div>
+        <div class="col " >   
+     <div class="card prodect" style="width: 15rem">
+      <img src="images/bavaria/img.png" class="card-img-top " alt="...">
+      <div class="discount"><p>50% خصم</p>
+      </div>
+      <div class="heart"  onclick="myFunction()" ><i class="fa-solid fa-heart"></i></div>
+      <div class="card-body">
+        <p class="card-text discount-1"> <del>7,00 ₪</del> &nbsp; 6,00 ₪</p>
+        <p id=".discount-2">مشروب شعير بفاريا زنجبيل وليمون
+          500 مل</p>
+         
+          <div class="quantity buttons_added">
+            <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+          </div>
+          <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>اضافة</button>
+          </div>
+      </div>
+    </div>
+        <div class="col " >   
+     <div class="card prodect" style="width: 15rem">
+      <img src="images/bavaria/img.png" class="card-img-top " alt="...">
+      <div class="discount"><p>50% خصم</p>
+      </div>
+      <div class="heart"  onclick="myFunction()" ><i class="fa-solid fa-heart"></i></div>
+      <div class="card-body">
+        <p class="card-text discount-1"> <del>7,00 ₪</del> &nbsp; 6,00 ₪</p>
+        <p id=".discount-2">مشروب شعير بفاريا زنجبيل وليمون
+          500 مل</p>
+         
+          <div class="quantity buttons_added">
+            <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+          </div>
+          <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>اضافة</button>
+          </div>
+      </div>
+    </div>
+        <div class="col " >   
+     <div class="card prodect" style="width: 15rem">
+      <img src="images/bavaria/img.png" class="card-img-top " alt="...">
+      <div class="discount"><p>50% خصم</p>
+      </div>
+      <div class="heart"  onclick="myFunction()" ><i class="fa-solid fa-heart"></i></div>
+      <div class="card-body">
+        <p class="card-text discount-1"> <del>7,00 ₪</del> &nbsp; 6,00 ₪</p>
+        <p id=".discount-2">مشروب شعير بفاريا زنجبيل وليمون
+          500 مل</p>
+         
+          <div class="quantity buttons_added">
+            <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+          </div>
+          <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>اضافة</button>
+          </div>
+      </div>
+    </div>
+        <div class="col " >   
+     <div class="card prodect" style="width: 15rem">
+      <img src="images/bavaria/img.png" class="card-img-top " alt="...">
+      <div class="discount"><p>50% خصم</p>
+      </div>
+      <div class="heart"  onclick="myFunction()" ><i class="fa-solid fa-heart"></i></div>
+      <div class="card-body">
+        <p class="card-text discount-1"> <del>7,00 ₪</del> &nbsp; 6,00 ₪</p>
+        <p id=".discount-2">مشروب شعير بفاريا زنجبيل وليمون
+          500 مل</p>
+         
+          <div class="quantity buttons_added">
+            <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+          </div>
+          <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>اضافة</button>
+          </div>
+      </div>
+    </div>
+        <div class="col " >   
+     <div class="card prodect" style="width: 15rem">
+      <img src="images/bavaria/img.png" class="card-img-top " alt="...">
+      <div class="discount"><p>50% خصم</p>
+      </div>
+      <div class="heart"  onclick="myFunction()" ><i class="fa-solid fa-heart"></i></div>
+      <div class="card-body">
+        <p class="card-text discount-1"> <del>7,00 ₪</del> &nbsp; 6,00 ₪</p>
+        <p id=".discount-2">مشروب شعير بفاريا زنجبيل وليمون
+          500 مل</p>
+         
+          <div class="quantity buttons_added">
+            <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+          </div>
+          <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>اضافة</button>
+          </div>
+      </div>
+    </div>
+        <div class="col " >   
+     <div class="card prodect" style="width: 15rem">
+      <img src="images/bavaria/img.png" class="card-img-top " alt="...">
+      <div class="discount"><p>50% خصم</p>
+      </div>
+      <div class="heart"  onclick="myFunction()" ><i class="fa-solid fa-heart"></i></div>
+      <div class="card-body">
+        <p class="card-text discount-1"> <del>7,00 ₪</del> &nbsp; 6,00 ₪</p>
+        <p id=".discount-2">مشروب شعير بفاريا زنجبيل وليمون
+          500 مل</p>
+         
+          <div class="quantity buttons_added">
+            <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+          </div>
+          <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>اضافة</button>
+          </div>
+      </div>
+    </div>
+        <div class="col " >   
+     <div class="card prodect" style="width: 15rem">
+      <img src="images/bavaria/img.png" class="card-img-top " alt="...">
+      <div class="discount"><p>50% خصم</p>
+      </div>
+      <div class="heart"  onclick="myFunction()" ><i class="fa-solid fa-heart"></i></div>
+      <div class="card-body">
+        <p class="card-text discount-1"> <del>7,00 ₪</del> &nbsp; 6,00 ₪</p>
+        <p id=".discount-2">مشروب شعير بفاريا زنجبيل وليمون
+          500 مل</p>
+         
+          <div class="quantity buttons_added">
+            <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+          </div>
+          <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>اضافة</button>
+          </div>
+      </div>
+    </div>
+        <div class="col " >   
+     <div class="card prodect" style="width: 15rem">
+      <img src="images/bavaria/img.png" class="card-img-top " alt="...">
+      <div class="discount"><p>50% خصم</p>
+      </div>
+      <div class="heart"  onclick="myFunction()" ><i class="fa-solid fa-heart"></i></div>
+      <div class="card-body">
+        <p class="card-text discount-1"> <del>7,00 ₪</del> &nbsp; 6,00 ₪</p>
+        <p id=".discount-2">مشروب شعير بفاريا زنجبيل وليمون
+          500 مل</p>
+         
+          <div class="quantity buttons_added">
+            <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+          </div>
+          <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>اضافة</button>
+          </div>
+      </div>
+    </div>
+        <div class="col " >   
+     <div class="card prodect" style="width: 15rem">
+      <img src="images/bavaria/img.png" class="card-img-top " alt="...">
+      <div class="discount"><p>50% خصم</p>
+      </div>
+      <div class="heart"  onclick="myFunction()" ><i class="fa-solid fa-heart"></i></div>
+      <div class="card-body">
+        <p class="card-text discount-1"> <del>7,00 ₪</del> &nbsp; 6,00 ₪</p>
+        <p id=".discount-2">مشروب شعير بفاريا زنجبيل وليمون
+          500 مل</p>
+         
+          <div class="quantity buttons_added">
+            <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+          </div>
+          <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>اضافة</button>
+          </div>
+      </div>
+    </div>
+        <div class="col " >   
+     <div class="card prodect" style="width: 15rem">
+      <img src="images/bavaria/img.png" class="card-img-top " alt="...">
+      <div class="discount"><p>66% خصم</p>
+      </div>
+      <div class="heart"  onclick="myFunction()" ><i class="fa-solid fa-heart"></i></div>
+      <div class="card-body">
+        <p class="card-text discount-1"> <del>7,00 ₪</del> &nbsp; 6,00 ₪</p>
+        <p>مشروب شعير بفاريا زنجبيل وليمون
+          500 مل</p>
+         
+          <div class="quantity buttons_added">
+            <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+          </div>
+          <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>اضافة</button>
+          </div>
+      </div>
+    </div>
+        <div class="col " >   
+     <div class="card prodect" style="width: 15rem">
+      <img src="images/bavaria/img.png" class="card-img-top " alt="...">
+      <div class="discount"><p>66% خصم</p>
+      </div>
+      <div class="heart"  onclick="myFunction()" ><i class="fa-solid fa-heart"></i></div>
+      <div class="card-body">
+        <p class="card-text discount-1"> <del>7,00 ₪</del> &nbsp; 6,00 ₪</p>
+        <p>مشروب شعير بفاريا زنجبيل وليمون
+          500 مل</p>
+        
+          <div class="quantity buttons_added">
+            <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+          </div>
+          <button class="add-cart"><i class="fa-solid fa-basket-shopping p-1"></i>اضافة</button>
+          </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer dir="rtl" class="bg-black text-center text-white">
+    <div class="container p-4">
+      <section class="Footer-metro">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <ul class="list-unstyled">
+              <li>
+               <img class="mb-3" src="images/Group 74.png" alt="">
+              </li>
+              <li>
+                <p>أول مركز تسوق في قطاع غزة  فيه أجود المنتجات بأسعار منافسة 
+                  <br>
+                #مترو-ماركت
+               <br>
+                #تسوق-بلا-حدود</p>
+              </li>
+              <li>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="عنوان بريدك الإلكتروني" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline email-bth" type="button">ألاشتراك</button>
+              </div>
+            </div>
+              </li>
+              <li id="Ssocial-media">
+                <div class="social-media" id="facebook"><a href=""><i class="fa-brands fa-facebook-f"></i></a></div>
+                <div class="social-media" id="instagram"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="social-media" id="tiktok"><a href=""><i class="fa-brands fa-tiktok"></i></a></div>
+                <div class="social-media" id="twitter"><a href=""><i class="fa-brands fa-twitter"></i></a></div>
+                <div class="social-media" id="youtube"><a href=""><i class="fa-brands fa-youtube"></i></a></div>
+                </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 contact-information" >
+            <h5 class="text-uppercase pe-4">معلومات الاتصال</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <h6 class="md-3">عنوان:</h6>
+                <p>غزة_ شارع الشهداء_غرب أصدقاء المريض</p>
+              </li>
+              <li>
+                <h6>هاتف:</h6>
+                <p> 28822888</p>
+              </li>
+              <li>
+                <h6>:البريد الإلكتروني</h6>
+                <p> metro@metro-markwt.ps</p>
+              </li>
+            
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-3 Popular-Categories">
+            <h5 class="text-uppercase md-5 me-4">التنصنيفات الشائعة</h5>
+            <ul class="list-unstyled ">
+              <li class="mb-2">
+                <a href="#!" class="text-white">المشروبات</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">أطعمة طازجة</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">منتجات الألبان</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">خضروات و فواكهة</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">مواد غذائية </a>
+              </li>
+            </ul>
+          </div> 
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0" >
+            <h5 class="text-uppercase pe-5" style="text-align:start;">حسابي</h5>
+  
+            <ul class="list-unstyled mb-0" style="text-align: justify;">
+              <li class="mb-2">
+                <a href="#!" class="text-white">تسجيل الدخول</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">تاريخ الطلب</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">قائمة امنياتي</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white">ترتيب المسار</a>
+              </li>
+            </ul>
+          </div>
+         
+        </div>
+       
+      </section>
+      <hr>
+      <div class="Policy">
+    
+         
+          <nav>
+            <a href="#">سياسة البائع</a>
+            <a href="#">سياسة العائدات</a>
+            <a href="#">سياسة الدعم </a>
+            <a href="#"> سياسة التوصيل</a>
+          </nav>
+           
+          <nav class="Credit-card">
+           
+            <a href="#"><img src="./Images/visa.png" alt=""></a>
+            <a href="#"><img src="./Images/bank.png" alt=""></a>
+            <a href="#"><img src="./Images/visa.png" alt=""></a>
+            <a href="#"><img src="./Images/paypal.png" alt=""></a>
+            
+          </nav>
+          <div>
+            <h4>power by Dash</h4>
+          </div> 
+  
+          
+        
+       
+        
+      </div>
+      <hr>
+    </div>
+    
+  </footer>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
